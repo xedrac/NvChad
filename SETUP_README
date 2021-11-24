@@ -13,9 +13,12 @@ Setup new machine:
 
   - Install a NerdFont so icons work (See list at: https://www.nerdfonts.com/font-downloads)
         sudo mkdir /usr/local/share/fonts
-        wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
+        wget --no-check-certificate https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
         sudo unzip SourceCodePro.zip -d /usr/local/share/fonts
         fc-cache -f -v
+
+  - Create alias from vim -> nvim
+        echo "alias vim='nvim'" >> ~/.bashrc && source ~/.bashrc
         
 Documentation:
   https://nvchad.github.io/config/Default_mappings
