@@ -1,0 +1,21 @@
+https://nvchad.github.io/
+
+Setup new machine:
+
+  - Clone NvChad repo to ~/.config/nvim
+        git clone git@github.com/xedrac/NvChad ~/.config/nvim
+
+  - Install Neovim 0.5.1 or later
+        sudo dnf install neovim
+  
+  - Install plugins
+        nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+
+  - Install a NerdFont so icons work (See list at: https://www.nerdfonts.com/font-downloads)
+        sudo mkdir /usr/local/share/fonts
+        wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
+        sudo unzip SourceCodePro.zip -d /usr/local/share/fonts
+        fc-cache -f -v
+        
+Documentation:
+  https://nvchad.github.io/config/Default_mappings
