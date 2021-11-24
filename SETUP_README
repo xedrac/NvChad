@@ -19,6 +19,14 @@ Setup new machine:
 
   - Create alias from vim -> nvim
         echo "alias vim='nvim'" >> ~/.bashrc && source ~/.bashrc
+
+  - Install optional programs
+        sudo dnf install shfmt ShellCheck  # Shell formatting/linting
+        cargo install stylua               # Lua formatting
+        sudo dnf install lua-devel
+        sudo luarocks install luacheck     # Lua linting
+
+
         
 Documentation:
   https://nvchad.github.io/config/Default_mappings
